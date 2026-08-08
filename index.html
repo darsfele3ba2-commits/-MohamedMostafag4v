@@ -1,65 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr-Mohamed Mostafa | Grade 4 English</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Balsamiq+Sans:wght@700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #f0f9ff; overflow-x: hidden; touch-action: manipulation; }
-        .english-text { font-family: 'Balsamiq Sans', cursive; letter-spacing: 1px; }
-        .arabic-text { text-transform: none !important; }
-        .emoji-img { font-family: "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji", sans-serif; }
- 
-        .fade-in { animation: fadeIn 0.5s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .pop-out { animation: popOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-        @keyframes popOut { 0% { transform: scale(0); } 100% { transform: scale(1); } }
-        .shake { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
-        @keyframes shake {
-            10%, 90% { transform: translate3d(-1px,0,0); } 20%, 80% { transform: translate3d(2px,0,0); }
-            30%, 50%, 70% { transform: translate3d(-4px,0,0); } 40%, 60% { transform: translate3d(4px,0,0); }
-        }
- 
-        .btn-modern { transition: all 0.2s; position: relative; overflow: hidden; }
-        .btn-modern:active { transform: scale(0.95); }
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: #bae6fd; border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
- 
-        .bubble-btn { border-radius: 50px; box-shadow: inset -4px -4px 10px rgba(0,0,0,0.1), 0 8px 15px rgba(0,0,0,0.1); animation: floatBubble 3s ease-in-out infinite; }
-        .bubble-btn:nth-child(4n+1) { animation-delay: 0s; background-color: #e0f2fe; border-color: #38bdf8; color: #0284c7; }
-        .bubble-btn:nth-child(4n+2) { animation-delay: 0.5s; background-color: #fef08a; border-color: #facc15; color: #854d0e; }
-        .bubble-btn:nth-child(4n+3) { animation-delay: 1s; background-color: #dbeafe; border-color: #60a5fa; color: #1e3a8a; }
-        .bubble-btn:nth-child(4n+4) { animation-delay: 1.5s; background-color: #bae6fd; border-color: #0ea5e9; color: #075985; }
-        .bubble-btn:hover { filter: brightness(1.05); transform: translateY(-5px) scale(1.02); }
-        @keyframes floatBubble { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
- 
-        .wa-glow { animation: waGlow 2s infinite alternate; transition: all 0.3s ease; }
-        .wa-glow:hover { transform: scale(1.15) rotate(-10deg); }
-        @keyframes waGlow { from { box-shadow: 0 0 10px #25D366; } to { box-shadow: 0 0 20px #25D366, 0 0 30px #128C7E; } }
- 
-        .nemo-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%); }
-        .nemo-text-gradient { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(to right, #0284c7, #0c4a6e); }
- 
-        /* Match Pairs UI */
-        .match-btn { transition: all 0.2s; border: 4px solid #bae6fd; border-radius: 1rem; overflow: hidden; cursor: pointer; }
-        .match-btn.selected { border-color: #facc15; box-shadow: 0 0 15px #facc15; transform: scale(1.05); z-index: 10;}
-        .match-btn.matched { border-color: #22c55e; opacity: 0.5; pointer-events: none; filter: grayscale(100%); }
-        
-        /* True/False UI */
-        .tf-btn { transition: all 0.3s; }
-        .tf-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr-Mohamed Mostafa | Grade 4 English</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+    body { font-family: 'Cairo', sans-serif; background-color: #f0f9ff; overflow-x: hidden; touch-action: manipulation; }
+    .english-text { font-family: 'Balsamiq Sans', cursive; letter-spacing: 1px; }
+    .arabic-text { text-transform: none !important; }
+    .emoji-img { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; font-variant-emoji: emoji; }
+
+    .fade-in { animation: fadeIn 0.5s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .pop-out { animation: popOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+    @keyframes popOut { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+    .shake { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
+    @keyframes shake {
+        10%, 90% { transform: translate3d(-1px,0,0); } 20%, 80% { transform: translate3d(2px,0,0); }
+        30%, 50%, 70% { transform: translate3d(-4px,0,0); } 40%, 60% { transform: translate3d(4px,0,0); }
+    }
+
+    .btn-modern { transition: all 0.2s; position: relative; overflow: hidden; }
+    .btn-modern:active { transform: scale(0.95); }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #bae6fd; border-radius: 10px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
+
+    .bubble-btn { border-radius: 50px; box-shadow: inset -4px -4px 10px rgba(0,0,0,0.1), 0 8px 15px rgba(0,0,0,0.1); animation: floatBubble 3s ease-in-out infinite; }
+    .bubble-btn:hover { filter: brightness(1.05); transform: translateY(-5px) scale(1.02); }
+    @keyframes floatBubble { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
+
+    .wa-glow { animation: waGlow 2s infinite alternate; transition: all 0.3s ease; }
+    .wa-glow:hover { transform: scale(1.15) rotate(-10deg); }
+    @keyframes waGlow { from { box-shadow: 0 0 10px #25D366; } to { box-shadow: 0 0 20px #25D366, 0 0 30px #128C7E; } }
+
+    .nemo-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%); }
+    .nemo-text-gradient { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(to right, #0284c7, #0c4a6e); }
+
+    /* Match Pairs UI */
+    .match-btn { transition: all 0.2s; border: 4px solid #bae6fd; border-radius: 1rem; overflow: hidden; cursor: pointer; }
+    .match-btn.selected { border-color: #facc15; box-shadow: 0 0 15px #facc15; transform: scale(1.05); z-index: 10;}
+    .match-btn.matched { border-color: #22c55e; opacity: 0.5; pointer-events: none; filter: grayscale(60%); }
+
+    /* True/False UI */
+    .tf-btn { transition: all 0.3s; }
+    .tf-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+
+    .feedback-img { width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2)); }
+    .emoji-huge { font-size: 6rem; line-height: 1; }
+    .emoji-option { font-size: 2.75rem; line-height: 1; }
+</style>
 </head>
 <body class="text-gray-800">
- 
+
 <!-- ======= HEADER ======= -->
 <header id="mainHeader" class="nemo-gradient text-white p-2 md:p-3 shadow-xl sticky top-0 z-50 border-b-4 border-sky-300 transition-all duration-500">
     <div class="container mx-auto flex items-center justify-between w-full">
-        
-        <!-- Left: Grade Info -->
         <div class="w-1/3 flex flex-col items-start justify-center text-left pl-2">
             <h2 class="text-xs md:text-sm lg:text-base font-black text-sky-100 uppercase tracking-wider english-text leading-tight bg-sky-800 bg-opacity-40 p-2 rounded-xl border border-sky-400 backdrop-blur-sm shadow-inner">
                 Grade 4<br>
@@ -67,20 +65,14 @@
                 English
             </h2>
         </div>
-
-        <!-- Center: Teacher Info & Logo -->
         <div class="w-1/3 flex flex-col items-center justify-center text-center">
-            <div class="bg-white p-1 rounded-full shadow-lg border-2 md:border-4 border-sky-200 overflow-hidden mb-1 transition-all duration-500 flex items-center justify-center w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-cover bg-center" style="background-image: url('logo.jpeg');">
-                <!-- Fallback if image fails -->
-                <img src="logo.jpeg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" alt="Teacher Logo" class="h-full w-full object-cover rounded-full opacity-0">
-                <span style="display:none;" class="text-sky-600 font-black text-xs english-text flex items-center justify-center w-full h-full">Logo</span>
+            <div class="bg-white p-1 rounded-xl shadow-lg border-2 md:border-4 border-sky-200 overflow-hidden mb-1 transition-all duration-500 flex items-center justify-center w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20">
+                <img src="logo.jpeg" alt="Teacher Logo" class="h-full w-full object-contain rounded-lg">
             </div>
             <h1 class="text-sm md:text-lg lg:text-xl font-black text-white drop-shadow-md tracking-wide leading-tight english-text">mr-mohamed mostafa</h1>
             <p class="text-[10px] md:text-xs text-sky-200 font-bold arabic-text mt-0.5">بتاع الانجليزي</p>
             <p class="text-[10px] md:text-xs text-yellow-300 font-black english-text tracking-widest mt-0.5">01062625048</p>
         </div>
-
-        <!-- Right: WhatsApp -->
         <div class="w-1/3 flex justify-end pr-2">
             <a href="https://wa.me/201062625048" target="_blank" class="header-wa-btn bg-green-500 text-white p-2 md:p-3 rounded-full wa-glow shadow-xl flex items-center justify-center transition-all duration-500" aria-label="Contact on WhatsApp">
                 <svg class="w-6 h-6 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
@@ -88,11 +80,11 @@
         </div>
     </div>
 </header>
- 
+
 <!-- ======= MAIN CONTENT ======= -->
 <main class="container mx-auto p-4 min-h-screen">
 <div id="app">
- 
+
 <!-- ===== VIEW 1: UNITS MENU ===== -->
 <div id="unitsMenu" class="fade-in">
     <div class="text-center mb-8 mt-4">
@@ -100,10 +92,9 @@
         <p class="text-sky-800 text-sm md:text-base font-bold bg-sky-100 inline-block px-5 py-2 rounded-full shadow-sm border border-sky-300" dir="rtl">⭐ اختر الوحدة لتبدأ رحلة التعلم</p>
     </div>
     <div id="unitsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" dir="ltr">
-        <!-- Units injected here -->
     </div>
 </div>
- 
+
 <!-- ===== VIEW 2: LESSONS MENU ===== -->
 <div id="lessonsMenu" class="hidden fade-in max-w-5xl mx-auto">
     <div class="flex items-center gap-4 mb-8 bg-white p-4 rounded-2xl shadow-sm border border-sky-200">
@@ -116,8 +107,7 @@
     <div class="text-center mb-6">
         <h3 class="text-xl md:text-2xl font-black text-gray-700 arabic-text">اختر الدرس</h3>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mx-auto" id="lessonsContainer" dir="ltr">
-        <!-- Lessons injected here -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center mx-auto" id="lessonsContainer" dir="ltr">
     </div>
 </div>
 
@@ -130,17 +120,16 @@
         </button>
         <div class="text-center flex-1">
             <h2 id="gamesMenuUnitTitle" class="text-lg md:text-xl font-bold text-sky-600 english-text">Unit Title</h2>
-            <h3 id="gamesMenuLessonTitle" class="text-2xl md:text-4xl font-black text-sky-900 english-text">Lesson X</h3>
+            <h3 id="gamesMenuLessonTitle" class="text-xl md:text-3xl font-black text-sky-900 english-text">Lesson Title</h3>
         </div>
     </div>
     <div class="text-center mb-6">
         <h3 class="text-xl md:text-2xl font-black text-gray-700 arabic-text">اختر اللعبة لتبدأ التدريب على الكلمات</h3>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center mx-auto" id="gamesContainer" dir="ltr">
-        <!-- Games injected here -->
     </div>
 </div>
- 
+
 <!-- ===== VIEW 4: GAMEPLAY AREA ===== -->
 <div id="gameArea" class="hidden fade-in max-w-4xl mx-auto">
     <div class="flex justify-between items-center bg-white p-3 md:p-4 rounded-3xl shadow-lg mb-4 md:mb-6 border-b-4 border-sky-500">
@@ -163,15 +152,15 @@
         <div id="dynamicQuestionArea" class="w-full relative z-10 h-full flex flex-col justify-center" dir="ltr"></div>
     </div>
 </div>
- 
+
 <!-- ===== VIEW 5: RESULT AREA ===== -->
 <div id="resultArea" class="hidden fade-in max-w-4xl mx-auto text-center bg-white p-8 md:p-10 rounded-[40px] shadow-2xl border-t-8 border-sky-500 mt-6 relative overflow-hidden">
-    <div class="flex justify-center text-yellow-400 mb-6 drop-shadow-lg">
-        <svg class="w-28 h-28" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+    <div class="flex justify-center mb-6">
+        <img src="1.jpeg" alt="Great job" class="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl">
     </div>
     <h2 class="text-4xl md:text-6xl font-black text-sky-700 mb-4 english-text uppercase">Super Star!</h2>
     <p class="text-xl md:text-2xl text-gray-700 mb-8 font-bold">You scored <span id="finalScore" class="font-black nemo-text-gradient text-6xl md:text-7xl px-2 drop-shadow-sm">0</span> points</p>
- 
+
     <div class="mt-6 mb-8 max-w-md mx-auto bg-sky-50 p-6 md:p-8 rounded-3xl border-4 border-sky-200 shadow-md" dir="rtl">
         <h3 class="text-xl md:text-2xl font-black text-sky-800 mb-4 arabic-text">أرسل نتيجتك للمستر 🏆</h3>
         <input type="text" id="studentNameInput" placeholder="اكتب اسمك هنا يا بطل..." class="w-full p-4 rounded-2xl border-2 border-sky-300 mb-4 outline-none focus:border-sky-500 text-lg md:text-xl font-bold text-gray-800 text-center arabic-text">
@@ -180,148 +169,264 @@
             إرسال عبر واتساب
         </button>
     </div>
-    
+
     <div class="flex justify-center mt-6">
         <button id="playAgainBtn" class="btn-modern bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white font-black py-4 px-12 rounded-[30px] text-xl md:text-2xl shadow-xl w-full md:w-auto border-4 border-sky-200 english-text">
             Play Again
         </button>
     </div>
 </div>
- 
+
 </div><!-- #app -->
 </main>
- 
+
 <!-- ======= FEEDBACK OVERLAY ======= -->
 <div id="feedbackOverlay" class="fixed inset-0 bg-sky-900 bg-opacity-95 z-[100] hidden items-center justify-center backdrop-blur-sm px-4 transition-opacity">
     <div id="feedbackCard" class="bg-white p-8 md:p-12 rounded-[40px] shadow-2xl transform scale-0 text-center flex flex-col items-center w-full max-w-lg border-8 border-sky-100 relative">
-        <div id="feedbackIconContainer" class="mb-4 flex justify-center w-full items-center relative text-8xl md:text-9xl drop-shadow-xl emoji-img"></div>
+        <div id="feedbackIconContainer" class="mb-4 flex justify-center w-full items-center relative"></div>
         <h2 id="feedbackText" class="text-3xl md:text-5xl font-black text-gray-800 leading-relaxed english-text mt-4" dir="ltr"></h2>
         <div id="feedbackCorrection" class="hidden mt-4 text-xl md:text-2xl font-bold text-gray-700 bg-gray-100 p-4 rounded-2xl border-2 border-gray-200 w-full arabic-text"></div>
     </div>
 </div>
- 
+
 <script>
 // ============================================================
 // AUDIO SYSTEM
 // ============================================================
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let audioCtx;
+function getAudioCtx(){ if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); return audioCtx; }
 function playTone(freq, type, duration) {
-    if(audioCtx.state === 'suspended') audioCtx.resume();
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = type; osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-    osc.connect(gain); gain.connect(audioCtx.destination); osc.start();
-    gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-    osc.stop(audioCtx.currentTime + duration);
+    const ctx = getAudioCtx();
+    if(ctx.state === 'suspended') ctx.resume();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type; osc.frequency.setValueAtTime(freq, ctx.currentTime);
+    osc.connect(gain); gain.connect(ctx.destination); osc.start();
+    gain.gain.setValueAtTime(0.5, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + duration);
+    osc.stop(ctx.currentTime + duration);
 }
 function playCorrectSound() { playTone(600,'sine',0.1); setTimeout(()=>playTone(800,'sine',0.15),100); }
 function playWrongSound() { playTone(300,'sawtooth',0.2); setTimeout(()=>playTone(200,'sawtooth',0.3),150); }
 function playFinishSound() { [523,659,783,1046].forEach((f,i)=>setTimeout(()=>playTone(f,'sine',0.2),i*150)); }
- 
+
 function speakWord(text) {
     if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'en-US';
-        utterance.rate = 0.9;
+        utterance.rate = 0.85;
         window.speechSynthesis.speak(utterance);
     }
 }
- 
+
 // ============================================================
-// DATA DEFINITIONS (Grade 4 - Term 1)
+// DATA: REAL VOCABULARY FROM THE STUDENT'S BOOK (Grade 4 - Term 1)
+// Each lesson lists the exact "Key Vocabulary" + "Other Vocabulary" words
+// found in that lesson only - no outside words are added.
+// The "e" field (emoji) is only added to words that have one clear,
+// unambiguous visual - it is used just for extra question variety and
+// is NEVER shown together with the very word/meaning being tested.
 // ============================================================
 const vocabDB = {
-    unit1: {
-        title: "Unit 1: The Five Senses",
-        words: [
-            { en: "see", ar: "يرى", e: "👀" }, { en: "hear", ar: "يسمع", e: "👂" },
-            { en: "smell", ar: "يشم", e: "👃" }, { en: "taste", ar: "يتذوق", e: "👅" },
-            { en: "touch", ar: "يلمس", e: "✋" }, { en: "healthy", ar: "صحي", e: "💪" },
-            { en: "strong", ar: "قوي", e: "🦾" }, { en: "brush teeth", ar: "يغسل أسنانه", e: "🪥" },
-            { en: "wash", ar: "يغسل", e: "🧼" }, { en: "exercise", ar: "يتدرب", e: "🏃" },
-            { en: "vegetables", ar: "خضروات", e: "🥦" }, { en: "fruit", ar: "فاكهة", e: "🍎" },
-            { en: "sleep", ar: "ينام", e: "😴" }, { en: "hungry", ar: "جوعان", e: "🍽️" },
-            { en: "share", ar: "يشارك", e: "🤝" }, { en: "soup", ar: "شوربة", e: "🍲" },
-            { en: "market", ar: "سوق", e: "🏪" }, { en: "wake up early", ar: "يستيقظ مبكرًا", e: "⏰" },
-            { en: "breakfast", ar: "وجبة الإفطار", e: "🍳" }, { en: "milk", ar: "حليب", e: "🥛" }
-        ]
-    },
-    unit2: {
-        title: "Unit 2: My Community",
-        words: [
-            { en: "community", ar: "مجتمع", e: "🏘️" }, { en: "neighbors", ar: "جيران", e: "🏠" },
-            { en: "volunteer", ar: "يتطوع", e: "🙋" }, { en: "clean", ar: "ينظف", e: "🧹" },
-            { en: "help", ar: "يساعد", e: "🤝" }, { en: "collect", ar: "يجمع", e: "🗑️" },
-            { en: "plant", ar: "يزرع", e: "🌱" }, { en: "street", ar: "شارع", e: "🛣️" },
-            { en: "park", ar: "حديقة عامة", e: "🌳" }, { en: "trash", ar: "قمامة", e: "🚮" },
-            { en: "fix", ar: "يصلح", e: "🔧" }, { en: "traffic", ar: "ازدحام المرور", e: "🚦" },
-            { en: "dirty", ar: "غير نظيف", e: "🐷" }, { en: "solve", ar: "يحل", e: "🧩" },
-            { en: "culture", ar: "ثقافة", e: "🎭" }, { en: "festival", ar: "مهرجان", e: "🎉" },
-            { en: "harvest", ar: "يحصد", e: "🌾" }, { en: "pottery", ar: "فخار", e: "🏺" },
-            { en: "diary", ar: "مذكرات", e: "📔" }, { en: "train station", ar: "محطة قطار", e: "🚉" }
-        ]
-    },
-    unit3: {
-        title: "Unit 3: Animals Around Us",
-        words: [
-            { en: "lion", ar: "أسد", e: "🦁" }, { en: "monkey", ar: "قرد", e: "🐒" },
-            { en: "elephant", ar: "فيل", e: "🐘" }, { en: "giraffe", ar: "زرافة", e: "🦒" },
-            { en: "zebra", ar: "حمار وحشي", e: "🦓" }, { en: "hunt", ar: "يصطاد", e: "🏹" },
-            { en: "catch", ar: "يمسك", e: "🐾" }, { en: "trunk", ar: "خرطوم الفيل", e: "🐘" },
-            { en: "tall", ar: "طويل", e: "📏" }, { en: "fur", ar: "فراء", e: "🧶" },
-            { en: "claws", ar: "مخالب", e: "🐾" }, { en: "vet", ar: "طبيب بيطري", e: "👩‍⚕️" },
-            { en: "cage", ar: "قفص", e: "🔒" }, { en: "pet", ar: "حيوان أليف", e: "🐶" },
-            { en: "forest ranger", ar: "حارس الغابة", e: "🌲" }, { en: "zoo", ar: "حديقة الحيوان", e: "🦓" },
-            { en: "cave", ar: "كهف", e: "🕳️" }, { en: "footprints", ar: "آثار أقدام", e: "👣" },
-            { en: "endangered", ar: "مهدد بالانقراض", e: "⚠️" }, { en: "leopard", ar: "نمر", e: "🐆" }
-        ]
-    },
-    unit4: {
-        title: "Unit 4: Our Beautiful Egypt",
-        words: [
-            { en: "pyramids", ar: "أهرامات", e: "🔺" }, { en: "Nile River", ar: "نهر النيل", e: "🌊" },
-            { en: "Cairo Tower", ar: "برج القاهرة", e: "🗼" }, { en: "Siwa Oasis", ar: "واحة سيوة", e: "🏝️" },
-            { en: "museum", ar: "متحف", e: "🏛️" }, { en: "hospital", ar: "مستشفى", e: "🏥" },
-            { en: "school", ar: "مدرسة", e: "🏫" }, { en: "library", ar: "مكتبة", e: "📚" },
-            { en: "shopping mall", ar: "مركز تسوق", e: "🛍️" }, { en: "post office", ar: "مكتب بريد", e: "📮" },
-            { en: "restaurant", ar: "مطعم", e: "🍽️" }, { en: "sick", ar: "مريض", e: "🤒" },
-            { en: "camel", ar: "جمل", e: "🐫" }, { en: "tourist", ar: "سائح", e: "🧳" },
-            { en: "mountain", ar: "جبل", e: "⛰️" }, { en: "monastery", ar: "دير", e: "⛪" },
-            { en: "rocks", ar: "صخور", e: "🪨" }, { en: "adventure", ar: "مغامرة", e: "🧭" },
-            { en: "popular", ar: "مشهور", e: "⭐" }, { en: "photo", ar: "صورة", e: "📷" }
-        ]
-    },
-    unit5: {
-        title: "Unit 5: A Day at Work",
-        words: [
-            { en: "doctor", ar: "طبيب", e: "👨‍⚕️" }, { en: "nurse", ar: "ممرض", e: "👩‍⚕️" },
-            { en: "teacher", ar: "معلم", e: "👨‍🏫" }, { en: "engineer", ar: "مهندس", e: "👷" },
-            { en: "firefighter", ar: "رجل إطفاء", e: "👨‍🚒" }, { en: "police officer", ar: "ضابط شرطة", e: "👮" },
-            { en: "patient", ar: "مريض", e: "🤕" }, { en: "helmet", ar: "خوذة", e: "⛑️" },
-            { en: "mentor", ar: "مرشد", e: "🧑‍🏫" }, { en: "photographer", ar: "مصور", e: "📸" },
-            { en: "actor", ar: "ممثل", e: "🎭" }, { en: "wildlife", ar: "حياة برية", e: "🦓" },
-            { en: "brave", ar: "شجاع", e: "🦸" }, { en: "carpenter", ar: "نجار", e: "🪚" },
-            { en: "furniture", ar: "أثاث", e: "🪑" }, { en: "wooden", ar: "خشبي", e: "🪵" },
-            { en: "king", ar: "ملك", e: "👑" }, { en: "gift", ar: "هدية", e: "🎁" },
-            { en: "hero", ar: "بطل", e: "🦸‍♂️" }, { en: "uniform", ar: "زي رسمي", e: "👔" }
-        ]
-    }
+  unit1: {
+    title: "Unit 1: The Five Senses",
+    lessons: [
+      { title: "What are the Five Senses?", words: [
+        {en:"see", ar:"يرى", e:"👀"}, {en:"hear", ar:"يسمع", e:"👂"}, {en:"smell", ar:"يشم", e:"👃"}, {en:"taste", ar:"يتذوق", e:"👅"},
+        {en:"touch", ar:"يلمس", e:"✋"}, {en:"senses", ar:"الحواس"}, {en:"understand", ar:"يفهم"}, {en:"sight", ar:"رؤية"},
+        {en:"hearing", ar:"حاسة السمع"}, {en:"smoke", ar:"دخان", e:"💨"}, {en:"safe", ar:"آمن", e:"🛡️"},
+        {en:"school garden", ar:"حديقة المدرسة", e:"🏫"}, {en:"colorful", ar:"ملوّن", e:"🌈"}, {en:"beautiful", ar:"جميل", e:"😍"},
+        {en:"butterflies", ar:"فراشات", e:"🦋"}, {en:"day", ar:"يوم", e:"☀️"}, {en:"fire", ar:"حريق", e:"🔥"}, {en:"amazing", ar:"رائع", e:"🤩"},
+        {en:"students", ar:"تلاميذ", e:"🧑‍🎓"}, {en:"flowers", ar:"زهور", e:"🌸"}, {en:"important", ar:"مهم"}
+      ]},
+      { title: "Healthy Habits", words: [
+        {en:"healthy", ar:"صحّي", e:"💪"}, {en:"strong", ar:"قوي", e:"🦾"}, {en:"brush", ar:"يغسل بالفرشاة", e:"🪥"}, {en:"wash", ar:"يغسل", e:"🧼"},
+        {en:"exercise", ar:"يتدرب", e:"🏃"}, {en:"garden", ar:"حديقة", e:"🌳"}, {en:"vegetables", ar:"خضروات", e:"🥦"}, {en:"energy", ar:"طاقة", e:"⚡"},
+        {en:"fruit", ar:"فاكهة", e:"🍎"}, {en:"sleep", ar:"ينام", e:"😴"}, {en:"habits", ar:"عادات"},
+        {en:"rich", ar:"غني"}, {en:"sweets", ar:"حلوى", e:"🍬"}, {en:"juice", ar:"عصير", e:"🧃"}, {en:"vitamins", ar:"فيتامينات", e:"💊"},
+        {en:"bedtime", ar:"وقت النوم", e:"🛏️"}, {en:"morning", ar:"صباح", e:"🌅"}, {en:"sports", ar:"رياضة", e:"⚽"}, {en:"bread", ar:"خبز", e:"🍞"},
+        {en:"break time", ar:"وقت الاستراحة", e:"⏰"}
+      ]},
+      { title: "Story Time: Goha's Great Meal", words: [
+        {en:"hungry", ar:"جوعان", e:"🍽️"}, {en:"owner", ar:"مالك"}, {en:"greedy", ar:"طماع", e:"🤑"}, {en:"share", ar:"يشارك", e:"🤝"},
+        {en:"soup", ar:"شوربة", e:"🍲"}, {en:"market", ar:"سوق", e:"🏪"}, {en:"coins", ar:"عملات معدنية", e:"🪙"}, {en:"restaurant", ar:"مطعم", e:"🍴"},
+        {en:"jingling", ar:"قعقعة", e:"🔔"}, {en:"delicious", ar:"لذيذ", e:"😋"}, {en:"clever", ar:"ذكي", e:"🧠"},
+        {en:"pocket", ar:"جيب", e:"👖"}, {en:"outside", ar:"بالخارج"}, {en:"one day", ar:"ذات يوم"}, {en:"deep", ar:"عميق"},
+        {en:"money", ar:"نقود", e:"💰"}, {en:"sound", ar:"صوت", e:"🔊"}, {en:"food", ar:"طعام", e:"🍔"}, {en:"air", ar:"هواء", e:"💨"}, {en:"fair", ar:"عادل"}
+      ]}
+    ]
+  },
+  unit2: {
+    title: "Unit 2: My Community",
+    lessons: [
+      { title: "Helping the Community", words: [
+        {en:"community", ar:"مجتمع", e:"🏘️"}, {en:"neighbors", ar:"جيران", e:"🏠"}, {en:"volunteers", ar:"متطوعون", e:"🙋"},
+        {en:"community park", ar:"حديقة مجتمعية", e:"🌳"}, {en:"clothes", ar:"ملابس", e:"👕"}, {en:"need", ar:"يحتاج"},
+        {en:"give", ar:"يعطي", e:"🎁"}, {en:"clean", ar:"ينظف", e:"🧹"}, {en:"feed", ar:"يطعم", e:"🍽️"}, {en:"help", ar:"يساعد", e:"🤝"},
+        {en:"collect", ar:"يجمع", e:"🗑️"}, {en:"plant", ar:"يزرع", e:"🌱"}, {en:"volunteer", ar:"يتطوع", e:"🙋"},
+        {en:"street", ar:"شارع", e:"🛣️"}, {en:"happy", ar:"سعيد", e:"😊"}, {en:"friends", ar:"أصدقاء", e:"👬"}, {en:"sometimes", ar:"أحيانًا"},
+        {en:"food", ar:"طعام", e:"🍔"}, {en:"things", ar:"أشياء"}, {en:"trash", ar:"قمامة", e:"🚮"}, {en:"trees", ar:"أشجار", e:"🌳"},
+        {en:"great", ar:"رائع", e:"👍"}, {en:"park", ar:"حديقة عامة", e:"🌳"}, {en:"job", ar:"وظيفة", e:"💼"}, {en:"people", ar:"ناس", e:"🧑‍🤝‍🧑"}
+      ]},
+      { title: "Community Problems and Solutions", words: [
+        {en:"engine", ar:"محرك", e:"⚙️"}, {en:"fix", ar:"يصلح", e:"🔧"}, {en:"traffic", ar:"ازدحام المرور", e:"🚦"}, {en:"trash", ar:"قمامة", e:"🚮"},
+        {en:"dirty", ar:"غير نظيف", e:"🐷"}, {en:"community", ar:"مجتمع", e:"🏘️"}, {en:"school bus", ar:"حافلة مدرسية", e:"🚌"},
+        {en:"problems", ar:"مشاكل"}, {en:"instead of", ar:"بدلاً من"}, {en:"solutions", ar:"حلول", e:"💡"}, {en:"solve", ar:"يحل", e:"🧩"},
+        {en:"bins", ar:"صناديق قمامة", e:"🗑️"}, {en:"family", ar:"عائلة", e:"👨‍👩‍👧"}, {en:"road", ar:"طريق", e:"🛣️"}, {en:"distances", ar:"مسافات"},
+        {en:"fewer cars", ar:"سيارات أقل", e:"🚗"}, {en:"ground", ar:"الأرض"}, {en:"quickly", ar:"بسرعة", e:"⚡"},
+        {en:"daily habits", ar:"عادات يومية"}, {en:"especially", ar:"بخاصة"}, {en:"routines", ar:"روتين"}, {en:"schools", ar:"مدارس", e:"🏫"}
+      ]},
+      { title: "Culture in Lower and Upper Egypt", words: [
+        {en:"culture", ar:"ثقافة", e:"🎭"}, {en:"festival", ar:"مهرجان", e:"🎉"}, {en:"sugar cane", ar:"قصب السكر", e:"🎋"},
+        {en:"harvest", ar:"يحصد", e:"🌾"}, {en:"designs", ar:"تصاميم", e:"🎨"}, {en:"appear", ar:"يظهر"}, {en:"responsible", ar:"مسؤول"},
+        {en:"turbans", ar:"عمائم", e:"👳"}, {en:"honest", ar:"أمين", e:"🤝"}, {en:"proud of", ar:"فخور بـ", e:"😌"},
+        {en:"region", ar:"منطقة", e:"🗺️"}, {en:"south", ar:"جنوب", e:"🧭"}, {en:"colors", ar:"ألوان", e:"🎨"}, {en:"Red Sea", ar:"البحر الأحمر", e:"🌊"},
+        {en:"Upper Egypt", ar:"صعيد مصر", e:"🗺️"}, {en:"traditions", ar:"تقاليد", e:"📜"}, {en:"pottery", ar:"فخار", e:"🏺"}, {en:"glass", ar:"زجاج", e:"🥃"},
+        {en:"carpets", ar:"سجاد", e:"🧶"}, {en:"factories", ar:"مصانع", e:"🏭"}, {en:"crafts", ar:"حرف يدوية", e:"🧵"},
+        {en:"traditional outfits", ar:"أزياء تقليدية", e:"👘"}, {en:"events", ar:"مناسبات", e:"🎪"}, {en:"dresses", ar:"فساتين", e:"👗"}
+      ]},
+      { title: "Writing: Our Community History", words: [
+        {en:"diary", ar:"مذكرات", e:"📔"}, {en:"history", ar:"تاريخ", e:"📜"}, {en:"train station", ar:"محطة قطار", e:"🚉"},
+        {en:"wooden", ar:"خشبي", e:"🪵"}, {en:"air pollution", ar:"تلوث الهواء", e:"🏭"}, {en:"tall", ar:"طويل", e:"🏢"},
+        {en:"neighborhood", ar:"حي سكني", e:"🏘️"}, {en:"building", ar:"مبنى", e:"🏢"}, {en:"community", ar:"مجتمع", e:"🏘️"}, {en:"stand", ar:"موجودة"},
+        {en:"grandpa", ar:"جد", e:"👴"}, {en:"proud of", ar:"فخور بـ", e:"😌"}, {en:"amazing", ar:"رائع", e:"🤩"}, {en:"market", ar:"سوق", e:"🏪"},
+        {en:"clean", ar:"نظيف", e:"🧹"}, {en:"wooden stalls", ar:"أكشاك خشبية", e:"🛖"}, {en:"fresh fruits", ar:"فواكه طازجة", e:"🍇"},
+        {en:"safely", ar:"بشكل آمن", e:"🛡️"}, {en:"neighbors", ar:"جيران", e:"🏠"}, {en:"park", ar:"حديقة", e:"🌳"}
+      ]}
+    ]
+  },
+  unit3: {
+    title: "Unit 3: Animals Around Us",
+    lessons: [
+      { title: "Animals at the Forest Park", words: [
+        {en:"lion", ar:"أسد", e:"🦁"}, {en:"monkey", ar:"قرد", e:"🐒"}, {en:"elephant", ar:"فيل", e:"🐘"}, {en:"giraffe", ar:"زرافة", e:"🦒"},
+        {en:"zebra", ar:"حمار وحشي", e:"🦓"}, {en:"forest park", ar:"حديقة الغابة", e:"🌲"}, {en:"information", ar:"معلومات"},
+        {en:"forest guide", ar:"مرشد الغابة", e:"🧭"}, {en:"habits", ar:"عادات"}, {en:"climbing", ar:"التسلق", e:"🧗"},
+        {en:"hunt", ar:"يصطاد", e:"🏹"}, {en:"catch", ar:"يمسك", e:"🐾"},
+        {en:"jungle land", ar:"أرض الغابة", e:"🌴"}, {en:"gray", ar:"رمادي"}, {en:"striped", ar:"مخطط"}, {en:"trunk", ar:"خرطوم الفيل", e:"🐘"},
+        {en:"coat", ar:"فرو"}, {en:"groups", ar:"مجموعات"}, {en:"tall", ar:"طويل", e:"📏"}, {en:"bear", ar:"دب", e:"🐻"},
+        {en:"long tail", ar:"ذيل طويل"}, {en:"spots", ar:"بقع"}, {en:"thick", ar:"سميك"}, {en:"fur", ar:"فراء", e:"🧶"},
+        {en:"claws", ar:"مخالب", e:"🐾"}, {en:"sharp", ar:"حاد"}, {en:"visitors", ar:"زوار", e:"🚶"}, {en:"unique", ar:"فريد", e:"⭐"}
+      ]},
+      { title: "Taking Care of Animals", words: [
+        {en:"vet", ar:"طبيب بيطري", e:"🩺"}, {en:"cage", ar:"قفص", e:"🔒"}, {en:"pet animals", ar:"حيوانات أليفة", e:"🐶"},
+        {en:"forest ranger", ar:"حارس الغابة", e:"🌲"}, {en:"take care of", ar:"يعتني بـ"}, {en:"help animals", ar:"يساعد الحيوانات", e:"🐾"},
+        {en:"owner", ar:"مالك"}, {en:"protect animals", ar:"يحمي الحيوانات", e:"🛡️"}, {en:"bigger spaces", ar:"مساحات أكبر"},
+        {en:"specific care", ar:"رعاية خاصة"}, {en:"homes", ar:"مواطن", e:"🏠"},
+        {en:"health", ar:"الصحة", e:"❤️"}, {en:"healthy", ar:"صحي", e:"💪"}, {en:"wild animals", ar:"الحيوانات المتوحشة", e:"🐆"},
+        {en:"zoo", ar:"حديقة الحيوان", e:"🦓"}, {en:"safe", ar:"آمن", e:"🛡️"}, {en:"bigger", ar:"أكبر"}, {en:"attention", ar:"عناية", e:"👀"},
+        {en:"daily", ar:"يوميًا"}, {en:"kindness", ar:"اللطف", e:"💗"}, {en:"king", ar:"ملك", e:"👑"}, {en:"challenges", ar:"تحديات"},
+        {en:"simple ways", ar:"طرق بسيطة"}, {en:"check", ar:"يفحص", e:"✅"}, {en:"small acts", ar:"أفعال بسيطة"}
+      ]},
+      { title: "Story: The Old Lion & The Fox", words: [
+        {en:"hunt", ar:"يصطاد", e:"🏹"}, {en:"cave", ar:"كهف", e:"🕳️"}, {en:"footprints", ar:"آثار أقدام", e:"👣"}, {en:"hole", ar:"حفرة", e:"🕳️"},
+        {en:"mistake", ar:"خطأ", e:"❌"}, {en:"pretended", ar:"تظاهر بـ", e:"🎭"}, {en:"trick", ar:"حيلة", e:"🃏"}, {en:"lay down", ar:"استلقى", e:"🛌"},
+        {en:"weak", ar:"ضعيف"},
+        {en:"sick", ar:"مريض", e:"🤒"}, {en:"strong", ar:"قوي", e:"💪"}, {en:"wise", ar:"حكيم", e:"🦉"}, {en:"surface", ar:"سطح"},
+        {en:"laughing", ar:"يضحك", e:"😂"}, {en:"small", ar:"صغير"}, {en:"die", ar:"يموت"}, {en:"quick", ar:"سريع", e:"⚡"},
+        {en:"fluffy tail", ar:"ذيل رقيق", e:"🦊"}, {en:"rocks", ar:"صخور", e:"🪨"}, {en:"visitor", ar:"زائر", e:"🚶"}, {en:"ran away", ar:"هرب", e:"🏃"},
+        {en:"entrance", ar:"مدخل", e:"🚪"}
+      ]},
+      { title: "A Research Report", words: [
+        {en:"leopard", ar:"نمر", e:"🐆"}, {en:"sea grass", ar:"حشائش البحر", e:"🌿"}, {en:"dugong", ar:"حيوان الأطوم", e:"🐋"},
+        {en:"danger", ar:"خطر", e:"⚠️"}, {en:"fishing net", ar:"شبكة صيد السمك", e:"🎣"}, {en:"endangered", ar:"مهدد بالانقراض", e:"⚠️"},
+        {en:"report", ar:"تقرير", e:"📄"}, {en:"species", ar:"أنواع"}, {en:"pollution", ar:"تلوث", e:"🏭"}, {en:"disappearing", ar:"اختفاء"},
+        {en:"forest", ar:"غابة", e:"🌲"},
+        {en:"facts", ar:"حقائق"}, {en:"the Middle East", ar:"الشرق الأوسط", e:"🗺️"}, {en:"houses", ar:"منازل", e:"🏠"},
+        {en:"area", ar:"منطقة"}, {en:"amazing", ar:"رائع", e:"🤩"}, {en:"remain in", ar:"يبقى في"}, {en:"wild", ar:"البرّية"},
+        {en:"reason", ar:"سبب"}, {en:"habitats", ar:"مواطن", e:"🏠"}, {en:"gentle", ar:"لطيف", e:"😌"}, {en:"disappear", ar:"يختفي"}
+      ]}
+    ]
+  },
+  unit4: {
+    title: "Unit 4: Our Beautiful Egypt",
+    lessons: [
+      { title: "Places in Egypt", words: [
+        {en:"the Pyramids", ar:"الأهرامات", e:"🔺"}, {en:"the Nile River", ar:"نهر النيل", e:"🌊"}, {en:"the Cairo Tower", ar:"برج القاهرة", e:"🗼"},
+        {en:"Siwa Oasis", ar:"واحة سيوة", e:"🏝️"}, {en:"the Egyptian Museum", ar:"المتحف المصري", e:"🏛️"},
+        {en:"Khan Al-Khalili Bazaar", ar:"بازار خان الخليلي", e:"🕌"}, {en:"famous", ar:"مشهور", e:"⭐"}, {en:"gifts", ar:"هدايا", e:"🎁"},
+        {en:"tour guide", ar:"مرشد سياحي", e:"🧭"}, {en:"ride a camel", ar:"يركب جملاً", e:"🐫"},
+        {en:"history", ar:"تاريخ", e:"📜"}, {en:"giant", ar:"عملاق"}, {en:"top", ar:"قمة", e:"⛰️"}, {en:"treasures", ar:"كنوز", e:"💎"},
+        {en:"stones", ar:"أحجار", e:"🪨"}, {en:"welcome to", ar:"مرحبًا بكم في", e:"👋"}, {en:"pictures", ar:"صور", e:"📷"}, {en:"tourist", ar:"سائح", e:"🧳"},
+        {en:"camels", ar:"جِمال", e:"🐫"}, {en:"first time", ar:"أول مرة"}, {en:"country", ar:"دولة", e:"🌍"}
+      ]},
+      { title: "My City", words: [
+        {en:"hospital", ar:"مستشفى", e:"🏥"}, {en:"school", ar:"مدرسة", e:"🏫"}, {en:"library", ar:"مكتبة", e:"📚"},
+        {en:"shopping mall", ar:"مركز تسوق", e:"🛍️"}, {en:"museum", ar:"متحف", e:"🏛️"}, {en:"post office", ar:"مكتب بريد", e:"📮"},
+        {en:"packages", ar:"طرود", e:"📦"}, {en:"pyramids", ar:"أهرامات", e:"🔺"}, {en:"restaurant", ar:"مطعم", e:"🍴"}, {en:"sick", ar:"مريض", e:"🤒"},
+        {en:"buildings", ar:"مبانٍ", e:"🏢"}, {en:"connected", ar:"متصل", e:"🔗"}, {en:"stores", ar:"محلات", e:"🏬"}, {en:"tools", ar:"أدوات", e:"🛠️"},
+        {en:"nurse", ar:"ممرضة", e:"👩‍⚕️"}, {en:"students", ar:"تلاميذ", e:"🧑‍🎓"}, {en:"letters", ar:"خطابات", e:"✉️"}, {en:"borrow", ar:"يستعير"},
+        {en:"city", ar:"مدينة", e:"🏙️"}, {en:"behind", ar:"خلف"}, {en:"in front of", ar:"أمام"}, {en:"next to", ar:"بجوار"}, {en:"between", ar:"بين"}
+      ]},
+      { title: "The World of Big Numbers", words: [
+        {en:"thousand", ar:"ألف"}, {en:"ten thousand", ar:"عشرة آلاف"}, {en:"hundred thousand", ar:"مائة ألف"},
+        {en:"million", ar:"مليون"}, {en:"ten million", ar:"عشرة ملايين"}, {en:"hundred million", ar:"مائة مليون"},
+        {en:"billion", ar:"مليار"}, {en:"tens", ar:"عشرات"}
+      ]},
+      { title: "Writing a Blog", words: [
+        {en:"photo", ar:"صورة", e:"📷"}, {en:"rocks", ar:"صخور", e:"🪨"}, {en:"monastery", ar:"دير", e:"⛪"}, {en:"popular", ar:"مشهور", e:"⭐"},
+        {en:"adventure", ar:"مغامرة", e:"🧭"},
+        {en:"visit", ar:"يزور", e:"🚶"}, {en:"mountain", ar:"جبل", e:"⛰️"}, {en:"south", ar:"جنوب", e:"🧭"}, {en:"Sinai", ar:"سيناء", e:"🏜️"},
+        {en:"the weather", ar:"الطقس", e:"🌤️"}, {en:"cold", ar:"بارد", e:"🥶"}, {en:"morning", ar:"صباح", e:"🌅"}, {en:"history", ar:"تاريخ", e:"📜"},
+        {en:"warm", ar:"دافئ", e:"🌞"}, {en:"natural", ar:"طبيعي", e:"🌿"}, {en:"old", ar:"قديم"}, {en:"colorful", ar:"ملوّن", e:"🌈"},
+        {en:"plants", ar:"نباتات", e:"🌱"}, {en:"views", ar:"مناظر طبيعية", e:"🏞️"}, {en:"at the top", ar:"في القمة"}, {en:"nature", ar:"الطبيعة", e:"🌳"}, {en:"have fun", ar:"يمرح", e:"🎉"}
+      ]}
+    ]
+  },
+  unit5: {
+    title: "Unit 5: A Day at Work",
+    lessons: [
+      { title: "Different Jobs", words: [
+        {en:"a doctor", ar:"طبيب", e:"👨‍⚕️"}, {en:"a nurse", ar:"ممرض", e:"👩‍⚕️"}, {en:"a teacher", ar:"معلم", e:"👨‍🏫"}, {en:"an engineer", ar:"مهندس", e:"👷"},
+        {en:"a firefighter", ar:"رجل إطفاء", e:"👨‍🚒"}, {en:"police officer", ar:"ضابط شرطة", e:"👮"}, {en:"save people", ar:"ينقذ الناس", e:"🆘"},
+        {en:"sick people", ar:"مرضى", e:"🤒"}, {en:"patient", ar:"مريض", e:"🤕"}, {en:"wear a helmet", ar:"يرتدي خوذة", e:"⛑️"}, {en:"design", ar:"يصمم", e:"📐"},
+        {en:"students", ar:"تلاميذ", e:"🧑‍🎓"}, {en:"new", ar:"جديد", e:"🆕"}, {en:"costumes", ar:"أزياء", e:"👘"}, {en:"building", ar:"مبنى", e:"🏢"},
+        {en:"jobs", ar:"وظائف", e:"💼"}, {en:"care for", ar:"يعتني بـ", e:"🤲"}, {en:"check", ar:"يفحص", e:"✅"}, {en:"fires", ar:"حرائق", e:"🔥"},
+        {en:"vest", ar:"صدار", e:"🦺"}, {en:"health", ar:"صحة", e:"❤️"}, {en:"coat", ar:"معطف", e:"🧥"}
+      ]},
+      { title: "Jobs I Love!", words: [
+        {en:"mentor", ar:"مرشد", e:"🧑‍🏫"}, {en:"wildlife photographer", ar:"مصور الحياة البرية", e:"📸"}, {en:"voice-over actor", ar:"ممثل التعليق الصوتي", e:"🎙️"},
+        {en:"puppet", ar:"دمية", e:"🪆"}, {en:"voices", ar:"أصوات بشرية", e:"🗣️"},
+        {en:"brave", ar:"شجاع", e:"🦸"}, {en:"characters", ar:"شخصيات", e:"🎭"}, {en:"wild animals", ar:"حيوانات برية", e:"🐆"}, {en:"photos", ar:"صور", e:"📸"},
+        {en:"wildlife", ar:"حياة برية", e:"🦓"}, {en:"marks", ar:"درجات"}, {en:"helpful", ar:"مفيد", e:"🤝"}, {en:"high", ar:"عالي الصوت", e:"🔊"},
+        {en:"low", ar:"منخفض", e:"🔉"}, {en:"shy", ar:"خجول", e:"😳"}, {en:"stories", ar:"قصص", e:"📖"}, {en:"slow", ar:"بطيء", e:"🐢"}, {en:"fast", ar:"سريع", e:"🐇"},
+        {en:"faraway", ar:"بعيد"}, {en:"exciting", ar:"ممتع", e:"🤩"}, {en:"laugh", ar:"يضحك", e:"😂"}, {en:"loud", ar:"عالٍ", e:"📢"}
+      ]},
+      { title: 'Story Time: "The Last House"', words: [
+        {en:"carpenter", ar:"نجار", e:"🪚"}, {en:"furniture", ar:"أثاث", e:"🪑"}, {en:"wooden", ar:"خشبي", e:"🪵"}, {en:"king", ar:"ملك", e:"👑"},
+        {en:"gift", ar:"هدية", e:"🎁"}, {en:"skilled", ar:"ماهر", e:"🎯"}, {en:"weak wood", ar:"خشب رديء"}, {en:"promise", ar:"يعد", e:"🤝"},
+        {en:"poor work", ar:"عمل سيء"}, {en:"strong", ar:"قوي", e:"💪"}, {en:"regret", ar:"يندم", e:"😔"},
+        {en:"village", ar:"قرية", e:"🏡"}, {en:"keys", ar:"مفاتيح", e:"🔑"}, {en:"fit", ar:"يلائم"}, {en:"repair", ar:"يصلح", e:"🔨"},
+        {en:"lifetime", ar:"مدى الحياة"}, {en:"carelessly", ar:"بإهمال"}, {en:"tired", ar:"متعب", e:"😩"}, {en:"busy", ar:"مشغول", e:"🏃"},
+        {en:"heart", ar:"قلب", e:"❤️"}, {en:"nail", ar:"مسمار", e:"🔩"}, {en:"crooked", ar:"معوج"}, {en:"shocked", ar:"مصدوم", e:"😲"}
+      ]},
+      { title: "Writing: Non-Fiction", words: [
+        {en:"hero", ar:"بطل", e:"🦸"}, {en:"firefighter", ar:"رجل إطفاء", e:"👨‍🚒"}, {en:"uniform", ar:"زي رسمي", e:"👔"}, {en:"equipment", ar:"معدات", e:"🧰"},
+        {en:"danger", ar:"خطر", e:"⚠️"}, {en:"fire station", ar:"محطة الإطفاء", e:"🚒"}, {en:"water hoses", ar:"خراطيم المياه", e:"🚿"},
+        {en:"protective uniform", ar:"زي واقٍ", e:"🦺"}, {en:"tanks", ar:"خزانات", e:"🛢️"}, {en:"stripes", ar:"خطوط"}, {en:"dangerous", ar:"خطير", e:"⚠️"},
+        {en:"neighbor", ar:"جار", e:"🏠"}, {en:"truck", ar:"شاحنة", e:"🚚"}, {en:"thick", ar:"سميك"}, {en:"helmet", ar:"خوذة", e:"⛑️"},
+        {en:"bright yellow", ar:"أصفر فاتح", e:"🟡"}, {en:"team", ar:"فريق", e:"🤝"}, {en:"fight fires", ar:"يكافح الحرائق", e:"🔥"},
+        {en:"alarm", ar:"إنذار", e:"🚨"}, {en:"ladder", ar:"سلّم متنقل", e:"🪜"}, {en:"oxygen", ar:"الأكسجين", e:"🫁"}, {en:"difference", ar:"فرق"}, {en:"proud", ar:"فخور", e:"😌"}
+      ]}
+    ]
+  }
 };
 
 // ============================================================
 // GLOBAL STATE
 // ============================================================
 let currentUnitId = null;
-let currentLessonNum = null;
+let currentLessonIndex = null; // 0-based index into lessons array
 let currentGameType = null; // 'mcq', 'tf', 'match'
+let currentGameTitle = '';
 let gameQuestions = [];
 let currentQuestionIndex = 0;
 let currentGameScore = 0;
 let TOTAL_QUESTIONS = 15;
 
 // State specific to match game
-let matchState = { pairs: [], selectedEn: null, selectedAr: null, matchedCount: 0 };
+let matchState = { pairs: [], mode: 'en_ar', selectedLeft: null, selectedRight: null, matchedCount: 0 };
 
 // ============================================================
 // HELPERS
@@ -330,13 +435,12 @@ function shuffleArray(arr) { let a=[...arr]; for(let i=a.length-1;i>0;i--){ let 
 function hideAllViews() {
     ['unitsMenu','lessonsMenu','gamesMenu','gameArea','resultArea'].forEach(id=>document.getElementById(id).classList.add('hidden'));
 }
-function getRandomWrongOptions(correctOption, allWords, count = 3) {
-    let wrongOptions = shuffleArray(allWords.filter(w => w.en !== correctOption.en)).slice(0, count);
-    return wrongOptions.map(w => w.ar);
+function getCurrentLesson() {
+    return vocabDB[currentUnitId].lessons[currentLessonIndex];
 }
-function getRandomArabicWord(excludeEnWord, allWords) {
-    let filtered = allWords.filter(w => w.en !== excludeEnWord);
-    return filtered[Math.floor(Math.random() * filtered.length)].ar;
+function getRandomOtherValues(correctWord, allWords, field, count) {
+    let others = shuffleArray(allWords.filter(w => w.en !== correctWord.en && w[field] !== undefined)).slice(0, count);
+    return others.map(w => w[field]);
 }
 
 // ============================================================
@@ -345,54 +449,54 @@ function getRandomArabicWord(excludeEnWord, allWords) {
 function initApp() {
     const container = document.getElementById('unitsContainer');
     container.innerHTML = '';
-    
-    // Icon colors array for variety
-    const colors = ['sky', 'purple', 'green', 'orange', 'rose', 'yellow'];
-    
+    const colors = ['sky', 'purple', 'green', 'orange', 'rose'];
+
     Object.keys(vocabDB).forEach((unitId, index) => {
         const unit = vocabDB[unitId];
         const color = colors[index % colors.length];
         container.innerHTML += `
             <button onclick="showLessonsMenu('${unitId}')" class="btn-modern bg-white font-black py-6 px-4 rounded-[30px] shadow-lg border-b-8 border-${color}-400 hover:scale-105 text-xl md:text-2xl flex flex-col items-center gap-3 transition-transform text-center hover:bg-${color}-50">
-                <span class="text-${color}-500 bg-${color}-100 p-4 rounded-full drop-shadow-sm flex justify-center items-center text-4xl">📚</span>
+                <span class="text-${color}-500 bg-${color}-100 p-4 rounded-full drop-shadow-sm flex justify-center items-center text-4xl w-16 h-16">${index+1}</span>
                 <span class="english-text tracking-wider text-${color}-900">${unit.title}</span>
             </button>`;
     });
 }
- 
+
 function showUnitsMenu() {
     hideAllViews();
     document.getElementById('unitsMenu').classList.remove('hidden');
 }
- 
+
 function showLessonsMenu(unitId) {
     currentUnitId = unitId;
-    const unitTitle = vocabDB[unitId].title;
-    document.getElementById('lessonsMenuTitle').innerText = unitTitle;
-    
+    const unit = vocabDB[unitId];
+    document.getElementById('lessonsMenuTitle').innerText = unit.title;
+
     const container = document.getElementById('lessonsContainer');
     container.innerHTML = '';
-    
-    for(let i=1; i<=4; i++) {
+
+    unit.lessons.forEach((lesson, i) => {
         container.innerHTML += `
-            <button onclick="showGamesMenu(${i})" class="btn-modern bg-white font-black py-6 px-2 rounded-2xl shadow-md border-b-4 border-sky-300 hover:scale-105 text-lg flex flex-col items-center gap-2 transition-transform text-center hover:bg-sky-50">
-                <span class="text-sky-500 bg-sky-100 w-12 h-12 rounded-full flex justify-center items-center text-xl english-text">${i}</span>
-                <span class="english-text tracking-widest text-sky-800">Lesson ${i}</span>
+            <button onclick="showGamesMenu(${i})" class="btn-modern bg-white font-black py-6 px-4 rounded-2xl shadow-md border-b-4 border-sky-300 hover:scale-105 text-lg flex items-center gap-3 transition-transform text-right hover:bg-sky-50">
+                <span class="text-sky-500 bg-sky-100 w-12 h-12 rounded-full flex justify-center items-center text-xl english-text flex-shrink-0">${i+1}</span>
+                <span class="english-text tracking-wide text-sky-800 text-base md:text-lg leading-snug">${lesson.title}</span>
             </button>`;
-    }
-    
+    });
+
     hideAllViews();
     document.getElementById('lessonsMenu').classList.remove('hidden');
 }
 
-function showGamesMenu(lessonNum) {
-    currentLessonNum = lessonNum;
-    document.getElementById('gamesMenuUnitTitle').innerText = vocabDB[currentUnitId].title;
-    document.getElementById('gamesMenuLessonTitle').innerText = `Lesson ${lessonNum}`;
-    
+function showGamesMenu(lessonIndex) {
+    currentLessonIndex = lessonIndex;
+    const unit = vocabDB[currentUnitId];
+    const lesson = unit.lessons[lessonIndex];
+    document.getElementById('gamesMenuUnitTitle').innerText = unit.title;
+    document.getElementById('gamesMenuLessonTitle').innerText = lesson.title;
+
     const container = document.getElementById('gamesContainer');
     const btnClasses = "btn-modern bg-white font-black py-8 px-4 rounded-[30px] shadow-xl border-b-8 hover:scale-105 text-2xl flex flex-col items-center gap-4 text-center h-full transition-all";
-    
+
     container.innerHTML = `
         <button onclick="generateGame('match', 'Match Words')" class="${btnClasses} border-blue-400 text-blue-900 hover:bg-blue-50">
             <span class="text-4xl">🔗</span>
@@ -402,303 +506,420 @@ function showGamesMenu(lessonNum) {
         <button onclick="generateGame('mcq', 'Choose Correct')" class="${btnClasses} border-orange-400 text-orange-900 hover:bg-orange-50">
             <span class="text-4xl">👆</span>
             <span class="english-text tracking-widest text-2xl md:text-3xl">Choose</span>
-            <span class="text-sm md:text-base text-orange-600 font-bold border-t-2 border-orange-100 pt-2 w-full mt-2 arabic-text">اختر المعنى</span>
+            <span class="text-sm md:text-base text-orange-600 font-bold border-t-2 border-orange-100 pt-2 w-full mt-2 arabic-text">اختر المعنى الصحيح</span>
         </button>
         <button onclick="generateGame('tf', 'True or False')" class="${btnClasses} border-green-400 text-green-900 hover:bg-green-50">
             <span class="text-4xl">✅❌</span>
             <span class="english-text tracking-widest text-2xl md:text-3xl">True / False</span>
             <span class="text-sm md:text-base text-green-600 font-bold border-t-2 border-green-100 pt-2 w-full mt-2 arabic-text">صح أم خطأ</span>
         </button>`;
-        
+
     hideAllViews();
     document.getElementById('gamesMenu').classList.remove('hidden');
 }
 
 // ============================================================
 // GAME GENERATORS
+// Games use ONLY the vocabulary words that belong to the current lesson.
+//
+// Question-type variety (never shows an emoji next to the exact
+// word/meaning being tested in the same question):
+//  - en2ar / ar2en   : plain text prompt, plain text options
+//  - emoji2en/emoji2ar: an emoji ALONE is the prompt, options are text
+//  - en2emoji/ar2emoji: a text word ALONE is the prompt, options are emojis
 // ============================================================
+function pickMCQType(word, lessonWords, optionCount) {
+    let types = ['en2ar', 'ar2en'];
+    if (word.e) {
+        types.push('emoji2en', 'emoji2ar');
+        let othersWithEmoji = lessonWords.filter(w => w.e && w.en !== word.en);
+        if (othersWithEmoji.length >= optionCount - 1) {
+            types.push('en2emoji', 'ar2emoji');
+        }
+    }
+    return types[Math.floor(Math.random() * types.length)];
+}
+
+function buildMCQQuestion(word, lessonWords, optionCount) {
+    const type = pickMCQType(word, lessonWords, optionCount);
+    let q = { type: 'mcq', variant: type, wordObj: word };
+
+    if (type === 'en2ar') {
+        let opts = getRandomOtherValues(word, lessonWords, 'ar', optionCount - 1);
+        opts.push(word.ar);
+        q.promptKind = 'text-en'; q.prompt = word.en; q.optionsKind = 'text-ar';
+        q.options = shuffleArray(opts); q.correctAnswer = word.ar;
+    } else if (type === 'ar2en') {
+        let opts = getRandomOtherValues(word, lessonWords, 'en', optionCount - 1);
+        opts.push(word.en);
+        q.promptKind = 'text-ar'; q.prompt = word.ar; q.optionsKind = 'text-en';
+        q.options = shuffleArray(opts); q.correctAnswer = word.en;
+    } else if (type === 'emoji2en') {
+        let opts = getRandomOtherValues(word, lessonWords, 'en', optionCount - 1);
+        opts.push(word.en);
+        q.promptKind = 'emoji'; q.prompt = word.e; q.optionsKind = 'text-en';
+        q.options = shuffleArray(opts); q.correctAnswer = word.en;
+    } else if (type === 'emoji2ar') {
+        let opts = getRandomOtherValues(word, lessonWords, 'ar', optionCount - 1);
+        opts.push(word.ar);
+        q.promptKind = 'emoji'; q.prompt = word.e; q.optionsKind = 'text-ar';
+        q.options = shuffleArray(opts); q.correctAnswer = word.ar;
+    } else if (type === 'en2emoji') {
+        let opts = getRandomOtherValues(word, lessonWords, 'e', optionCount - 1);
+        opts.push(word.e);
+        q.promptKind = 'text-en'; q.prompt = word.en; q.optionsKind = 'emoji';
+        q.options = shuffleArray(opts); q.correctAnswer = word.e;
+    } else if (type === 'ar2emoji') {
+        let opts = getRandomOtherValues(word, lessonWords, 'e', optionCount - 1);
+        opts.push(word.e);
+        q.promptKind = 'text-ar'; q.prompt = word.ar; q.optionsKind = 'emoji';
+        q.options = shuffleArray(opts); q.correctAnswer = word.e;
+    }
+    return q;
+}
+
+function pickTFType(word, lessonWords) {
+    let types = ['en_ar', 'ar_en'];
+    if (word.e) types.push('emoji_en', 'emoji_ar');
+    return types[Math.floor(Math.random() * types.length)];
+}
+
+function buildTFQuestion(word, lessonWords) {
+    const type = pickTFType(word, lessonWords);
+    let isTrue = Math.random() > 0.5;
+    let q = { type: 'tf', variant: type, wordObj: word, isTrue: isTrue };
+
+    if (type === 'en_ar') {
+        q.promptKind = 'text-en'; q.prompt = word.en;
+        q.presentedKind = 'text-ar';
+        q.presented = isTrue ? word.ar : getRandomOtherValues(word, lessonWords, 'ar', 1)[0];
+    } else if (type === 'ar_en') {
+        q.promptKind = 'text-ar'; q.prompt = word.ar;
+        q.presentedKind = 'text-en';
+        q.presented = isTrue ? word.en : getRandomOtherValues(word, lessonWords, 'en', 1)[0];
+    } else if (type === 'emoji_en') {
+        q.promptKind = 'emoji'; q.prompt = word.e;
+        q.presentedKind = 'text-en';
+        q.presented = isTrue ? word.en : getRandomOtherValues(word, lessonWords, 'en', 1)[0];
+    } else if (type === 'emoji_ar') {
+        q.promptKind = 'emoji'; q.prompt = word.e;
+        q.presentedKind = 'text-ar';
+        q.presented = isTrue ? word.ar : getRandomOtherValues(word, lessonWords, 'ar', 1)[0];
+    }
+    return q;
+}
+
 function generateGame(gameType, gameTitle) {
     currentGameType = gameType;
-    const unitWords = vocabDB[currentUnitId].words;
+    currentGameTitle = gameTitle;
+    const lesson = getCurrentLesson();
+    const lessonWords = lesson.words;
     gameQuestions = [];
-    
-    // We need TOTAL_QUESTIONS (15) questions. 
-    // Since we have 20 words per unit, we will randomly select 15 words for this game session.
-    let selectedWords = shuffleArray(unitWords).slice(0, TOTAL_QUESTIONS);
-    
+
+    TOTAL_QUESTIONS = Math.min(15, lessonWords.length);
+    let pool = shuffleArray(lessonWords);
+    let selectedWords = pool.slice(0, TOTAL_QUESTIONS);
+
+    const optionCount = Math.min(4, lessonWords.length);
+
     if (gameType === 'mcq') {
-        selectedWords.forEach(word => {
-            let options = getRandomWrongOptions(word, unitWords, 3);
-            options.push(word.ar);
-            gameQuestions.push({
-                type: 'mcq',
-                wordObj: word,
-                options: shuffleArray(options),
-                correctAnswer: word.ar
-            });
-        });
+        selectedWords.forEach(word => gameQuestions.push(buildMCQQuestion(word, lessonWords, optionCount)));
     } else if (gameType === 'tf') {
-        selectedWords.forEach(word => {
-            let isTrue = Math.random() > 0.5;
-            let presentedAr = isTrue ? word.ar : getRandomArabicWord(word.en, unitWords);
-            gameQuestions.push({
-                type: 'tf',
-                wordObj: word,
-                presentedAr: presentedAr,
-                isTrue: isTrue
-            });
-        });
+        selectedWords.forEach(word => gameQuestions.push(buildTFQuestion(word, lessonWords)));
     } else if (gameType === 'match') {
-        // For match, we group into rounds of 5 pairs to fit on screen.
-        // 15 questions = 3 rounds of 5 pairs.
         let rounds = [];
-        for(let i=0; i<3; i++) {
-            let roundPairs = selectedWords.slice(i*5, (i+1)*5);
-            rounds.push({
-                type: 'match_round',
-                pairs: roundPairs
-            });
+        for (let i = 0; i < selectedWords.length; i += 5) {
+            let roundPairs = selectedWords.slice(i, i + 5);
+            let allHaveEmoji = roundPairs.every(p => p.e);
+            let mode = 'en_ar';
+            if (allHaveEmoji && Math.random() < 0.4) {
+                mode = Math.random() > 0.5 ? 'emoji_en' : 'emoji_ar';
+            }
+            rounds.push({ type: 'match_round', pairs: roundPairs, mode: mode });
         }
-        gameQuestions = rounds; // Here, gameQuestions has 3 items (rounds), but represents 15 words.
+        gameQuestions = rounds;
     }
 
-    // Setup Game UI
     currentQuestionIndex = 0;
     currentGameScore = 0;
-    document.getElementById('gameQuitBtn').onclick = () => showGamesMenu(currentLessonNum);
+    document.getElementById('gameQuitBtn').onclick = () => showGamesMenu(currentLessonIndex);
     document.getElementById('playAgainBtn').onclick = () => generateGame(gameType, gameTitle);
-    
+
     document.getElementById('scoreDisplay').innerText = 0;
     document.getElementById('qTotal').innerText = TOTAL_QUESTIONS;
     document.getElementById('gameTitle').innerText = gameTitle;
     document.getElementById('progressBar').style.width = '0%';
-    
+
     hideAllViews();
     document.getElementById('gameArea').classList.remove('hidden');
     loadQuestion();
 }
 
 function loadQuestion() {
-    let qTotalDisplay = TOTAL_QUESTIONS;
     let currentProgress = currentQuestionIndex;
-    
+
     if (currentGameType === 'match') {
-        // In match game, currentQuestionIndex is the round (0,1,2). 
-        // We calculate progress based on matched pairs inside the round.
         if (currentQuestionIndex >= gameQuestions.length) { endGame(); return; }
-        currentProgress = (currentQuestionIndex * 5); // Base progress for previous rounds
-        document.getElementById('qCurrent').innerText = currentProgress + 1 + " - " + (currentProgress + 5);
+        let doneSoFar = 0;
+        for (let i = 0; i < currentQuestionIndex; i++) doneSoFar += gameQuestions[i].pairs.length;
+        document.getElementById('qCurrent').innerText = (doneSoFar + 1) + " - " + (doneSoFar + gameQuestions[currentQuestionIndex].pairs.length);
+        currentProgress = doneSoFar;
     } else {
         if (currentQuestionIndex >= gameQuestions.length) { endGame(); return; }
         document.getElementById('qCurrent').innerText = currentQuestionIndex + 1;
     }
-    
-    document.getElementById('progressBar').style.width = ((currentProgress) / qTotalDisplay * 100) + '%';
-    
+
+    document.getElementById('progressBar').style.width = ((currentProgress) / TOTAL_QUESTIONS * 100) + '%';
+
     const container = document.getElementById('dynamicQuestionArea');
     container.innerHTML = '';
     container.style.pointerEvents = 'auto';
-    
+
     const q = gameQuestions[currentQuestionIndex];
-    
+
     if (currentGameType === 'mcq') renderMCQ(q, container);
     if (currentGameType === 'tf') renderTF(q, container);
     if (currentGameType === 'match') renderMatchRound(q, container);
 }
 
+function renderPromptBlock(kind, value) {
+    if (kind === 'emoji') {
+        return `<span class="emoji-huge emoji-img">${value}</span>`;
+    } else if (kind === 'text-en') {
+        return `<h2 class="text-3xl md:text-5xl font-black text-sky-900 english-text capitalize" dir="ltr">${value}</h2>`;
+    } else {
+        return `<h2 class="text-3xl md:text-5xl font-black text-sky-900 arabic-text" dir="rtl">${value}</h2>`;
+    }
+}
+
 function renderMCQ(q, container) {
+    const questionLabel = q.promptKind === 'text-ar' ? 'What is the English word?' :
+                           (q.optionsKind === 'emoji' ? 'اختر الصورة المناسبة' : 'ما معنى الكلمة؟');
+    const canSpeak = (q.promptKind === 'text-en');
+
     container.innerHTML = `
         <div class="w-full max-w-sm mx-auto mb-8 rounded-3xl shadow-lg border-4 border-sky-100 overflow-hidden py-8 flex flex-col items-center justify-center bg-sky-50">
-            <span class="text-7xl md:text-8xl mb-4 emoji-img drop-shadow-md">${q.wordObj.e}</span>
-            <h2 class="text-4xl md:text-5xl font-black text-sky-900 english-text capitalize">${q.wordObj.en}</h2>
-            <button onclick="speakWord('${q.wordObj.en}')" class="mt-4 bg-white p-2 rounded-full shadow border-2 border-sky-200 hover:bg-sky-100">🔊</button>
+            ${renderPromptBlock(q.promptKind, q.prompt)}
+            ${canSpeak ? `<button onclick="speakWord('${String(q.prompt).replace(/'/g,"\\'")}')" class="mt-4 bg-white p-2 rounded-full shadow border-2 border-sky-200 hover:bg-sky-100">🔊</button>` : ''}
         </div>
-        <div class="text-center mb-4"><span class="text-gray-500 font-bold arabic-text text-lg">ما معنى الكلمة؟</span></div>
+        <div class="text-center mb-4"><span class="text-gray-500 font-bold arabic-text text-lg">${questionLabel}</span></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl mx-auto" id="optionsArea"></div>`;
-        
+
     const optArea = document.getElementById('optionsArea');
     q.options.forEach(opt => {
         const btn = document.createElement('button');
-        btn.className = "btn-modern bg-white hover:bg-sky-100 text-sky-800 font-black px-6 rounded-2xl shadow-md border-b-4 border-sky-300 transition-all text-xl md:text-2xl py-4 arabic-text w-full";
+        let cls = "btn-modern bg-white hover:bg-sky-100 text-sky-800 font-black px-6 rounded-2xl shadow-md border-b-4 border-sky-300 transition-all py-4 w-full flex items-center justify-center ";
+        if (q.optionsKind === 'text-ar') { cls += "arabic-text text-xl md:text-2xl"; btn.dir = "rtl"; }
+        else if (q.optionsKind === 'text-en') { cls += "english-text text-xl md:text-2xl"; btn.dir = "ltr"; }
+        else { cls += "emoji-option emoji-img"; }
+        btn.className = cls;
         btn.innerText = opt;
-        btn.onclick = () => handleFinalAnswer(opt === q.correctAnswer, btn, opt, q.wordObj.en, q.correctAnswer);
+        btn.onclick = () => handleFinalAnswer(opt === q.correctAnswer, btn, buildCorrectionText(q));
         optArea.appendChild(btn);
     });
-    setTimeout(()=>speakWord(q.wordObj.en), 300);
+    if (canSpeak) setTimeout(()=>speakWord(q.prompt), 300);
+}
+
+function buildCorrectionText(q) {
+    const w = q.wordObj;
+    return `${w.en}  =  ${w.ar}`;
 }
 
 function renderTF(q, container) {
+    const canSpeakPrompt = (q.promptKind === 'text-en');
     container.innerHTML = `
         <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-3xl mx-auto mb-10">
             <div class="flex flex-col items-center bg-sky-50 p-6 rounded-3xl border-4 border-sky-200 w-full md:w-5/12 shadow-inner">
-                <span class="text-6xl mb-2 emoji-img">${q.wordObj.e}</span>
-                <h2 class="text-3xl md:text-4xl font-black text-sky-900 english-text capitalize text-center">${q.wordObj.en}</h2>
+                ${renderPromptBlock(q.promptKind, q.prompt)}
+                ${canSpeakPrompt ? `<button onclick="speakWord('${String(q.prompt).replace(/'/g,"\\'")}')" class="mt-3 bg-white p-2 rounded-full shadow border-2 border-sky-200 hover:bg-sky-100">🔊</button>` : ''}
             </div>
             <div class="text-2xl font-bold text-gray-400 arabic-text">يعني</div>
             <div class="flex flex-col items-center bg-orange-50 p-6 rounded-3xl border-4 border-orange-200 w-full md:w-5/12 shadow-inner">
-                <h2 class="text-3xl md:text-4xl font-black text-orange-900 arabic-text text-center mt-2">${q.presentedAr}</h2>
+                ${q.presentedKind === 'text-ar'
+                    ? `<h2 class="text-3xl md:text-4xl font-black text-orange-900 text-center mt-2 arabic-text" dir="rtl">${q.presented}</h2>`
+                    : `<h2 class="text-3xl md:text-4xl font-black text-orange-900 text-center mt-2 english-text capitalize" dir="ltr">${q.presented}</h2>`}
             </div>
         </div>
         <div class="flex justify-center gap-6 w-full max-w-xl mx-auto">
-            <button onclick="handleFinalAnswer(${q.isTrue === true}, this, 'True', '${q.wordObj.en}', '${q.isTrue ? q.presentedAr : 'خطأ، تعني: ' + q.wordObj.ar}')" class="tf-btn flex-1 bg-green-500 hover:bg-green-600 text-white font-black rounded-[30px] shadow-xl border-b-8 border-green-700 py-6 text-3xl arabic-text flex items-center justify-center gap-2">
+            <button onclick="handleTFAnswer(true)" class="tf-btn flex-1 bg-green-500 hover:bg-green-600 text-white font-black rounded-[30px] shadow-xl border-b-8 border-green-700 py-6 text-3xl arabic-text flex items-center justify-center gap-2">
                 صح ✅
             </button>
-            <button onclick="handleFinalAnswer(${q.isTrue === false}, this, 'False', '${q.wordObj.en}', '${!q.isTrue ? 'صحيح، إنها تعني: ' + q.wordObj.ar : 'خطأ، هي بالفعل تعني ' + q.wordObj.ar}')" class="tf-btn flex-1 bg-red-500 hover:bg-red-600 text-white font-black rounded-[30px] shadow-xl border-b-8 border-red-700 py-6 text-3xl arabic-text flex items-center justify-center gap-2">
+            <button onclick="handleTFAnswer(false)" class="tf-btn flex-1 bg-red-500 hover:bg-red-600 text-white font-black rounded-[30px] shadow-xl border-b-8 border-red-700 py-6 text-3xl arabic-text flex items-center justify-center gap-2">
                 خطأ ❌
             </button>
         </div>`;
-    setTimeout(()=>speakWord(q.wordObj.en), 300);
+    if (canSpeakPrompt) setTimeout(()=>speakWord(q.prompt), 300);
+}
+
+window.handleTFAnswer = function(userSaysTrue) {
+    const q = gameQuestions[currentQuestionIndex];
+    const isCorrect = (userSaysTrue === q.isTrue);
+    handleFinalAnswerGeneric(isCorrect, buildCorrectionText(q));
 }
 
 function renderMatchRound(q, container) {
-    matchState = { pairs: q.pairs, selectedEn: null, selectedAr: null, matchedCount: 0 };
-    
-    let shuffledEn = shuffleArray([...q.pairs]);
-    let shuffledAr = shuffleArray([...q.pairs]);
- 
-    let enHTML = shuffledEn.map(p => `
-        <div class="match-btn match-en bg-white text-sky-900 font-black text-xl md:text-2xl h-20 md:h-24 flex items-center justify-center english-text capitalize shadow-sm" data-id="${p.en}" onclick="handleMatchClick('en', '${p.en}', this)">
-            <span class="mr-2 text-2xl emoji-img">${p.e}</span> ${p.en}
+    const mode = q.mode || 'en_ar';
+    matchState = { pairs: q.pairs, mode: mode, selectedLeft: null, selectedRight: null, matchedCount: 0 };
+
+    let shuffledLeft = shuffleArray([...q.pairs]);
+    let shuffledRight = shuffleArray([...q.pairs]);
+
+    function leftHTML(p) {
+        if (mode === 'emoji_en' || mode === 'emoji_ar') return `<span class="text-3xl emoji-img">${p.e}</span>`;
+        return p.en;
+    }
+    function rightHTML(p) {
+        if (mode === 'emoji_en') return p.en;
+        if (mode === 'emoji_ar') return p.ar;
+        return p.ar;
+    }
+    const leftDir = (mode === 'emoji_en' || mode === 'emoji_ar') ? '' : 'ltr';
+    const rightIsAr = (mode === 'en_ar' || mode === 'emoji_ar');
+
+    let leftItems = shuffledLeft.map(p => `
+        <div class="match-btn match-left bg-white text-sky-900 font-black text-lg md:text-2xl h-20 md:h-24 flex items-center justify-center shadow-sm px-2 text-center ${leftDir==='ltr'?'english-text capitalize':''}" dir="${leftDir}" data-id="${p.en.replace(/"/g,'&quot;')}" onclick="handleMatchClick('left', this.dataset.id, this)">
+            ${leftHTML(p)}
         </div>`).join('');
-        
-    let arHTML = shuffledAr.map(p => `
-        <div class="match-btn match-ar bg-orange-50 text-orange-900 font-black text-xl md:text-2xl h-20 md:h-24 flex items-center justify-center arabic-text shadow-sm" data-id="${p.en}" onclick="handleMatchClick('ar', '${p.en}', this)">
-            ${p.ar}
+
+    let rightItems = shuffledRight.map(p => `
+        <div class="match-btn match-right bg-orange-50 text-orange-900 font-black text-lg md:text-2xl h-20 md:h-24 flex items-center justify-center shadow-sm px-2 text-center ${rightIsAr?'arabic-text':'english-text capitalize'}" dir="${rightIsAr?'rtl':'ltr'}" data-id="${p.en.replace(/"/g,'&quot;')}" onclick="handleMatchClick('right', this.dataset.id, this)">
+            ${rightHTML(p)}
         </div>`).join('');
- 
+
     container.innerHTML = `
         <div class="text-center w-full mb-6 flex justify-between items-center px-4">
             <h2 class="text-xl md:text-2xl font-black text-sky-800 arabic-text">صل الكلمة بمعناها</h2>
-            <button onclick="speakWord('Match the pairs')" class="bg-sky-100 p-2 rounded-full">🔊</button>
         </div>
         <div class="grid grid-cols-2 gap-6 md:gap-12 w-full max-w-3xl mx-auto">
-            <div class="flex flex-col gap-4">${enHTML}</div>
-            <div class="flex flex-col gap-4">${arHTML}</div>
+            <div class="flex flex-col gap-4">${leftItems}</div>
+            <div class="flex flex-col gap-4">${rightItems}</div>
         </div>`;
 }
 
-window.handleMatchClick = function(type, id, el) {
-    if(el.classList.contains('matched')) return;
-    
-    // Deselect previous of same type
-    document.querySelectorAll(`.match-${type}`).forEach(e => e.classList.remove('selected'));
+window.handleMatchClick = function(side, id, el) {
+    if (el.classList.contains('matched')) return;
+
+    document.querySelectorAll(`.match-${side}`).forEach(e => e.classList.remove('selected'));
     el.classList.add('selected');
- 
-    if(type === 'en') {
-        matchState.selectedEn = { id, el };
-        speakWord(id);
+
+    if (side === 'left') {
+        matchState.selectedLeft = { id, el };
+        if (matchState.mode === 'en_ar') speakWord(id);
     }
-    if(type === 'ar') matchState.selectedAr = { id, el };
- 
-    if(matchState.selectedEn && matchState.selectedAr) {
-        let isMatch = matchState.selectedEn.id === matchState.selectedAr.id;
-        
-        if(isMatch) {
+    if (side === 'right') matchState.selectedRight = { id, el };
+
+    if (matchState.selectedLeft && matchState.selectedRight) {
+        let isMatch = matchState.selectedLeft.id === matchState.selectedRight.id;
+
+        if (isMatch) {
             playCorrectSound();
-            matchState.selectedEn.el.classList.add('matched', 'border-green-500', 'bg-green-50');
-            matchState.selectedAr.el.classList.add('matched', 'border-green-500', 'bg-green-50');
-            matchState.selectedEn.el.classList.remove('selected');
-            matchState.selectedAr.el.classList.remove('selected');
-            
+            matchState.selectedLeft.el.classList.add('matched', 'border-green-500', 'bg-green-50');
+            matchState.selectedRight.el.classList.add('matched', 'border-green-500', 'bg-green-50');
+            matchState.selectedLeft.el.classList.remove('selected');
+            matchState.selectedRight.el.classList.remove('selected');
+
             matchState.matchedCount++;
-            matchState.selectedEn = null; matchState.selectedAr = null;
-            
-            // Update score visually during match game per pair
+            matchState.selectedLeft = null; matchState.selectedRight = null;
+
             currentGameScore += (100 / TOTAL_QUESTIONS);
             document.getElementById('scoreDisplay').innerText = Math.round(currentGameScore);
-            // Update progress bar
-            let totalMatchedSoFar = (currentQuestionIndex * 5) + matchState.matchedCount;
+
+            let doneBeforeThisRound = 0;
+            for (let i = 0; i < currentQuestionIndex; i++) doneBeforeThisRound += gameQuestions[i].pairs.length;
+            let totalMatchedSoFar = doneBeforeThisRound + matchState.matchedCount;
             document.getElementById('progressBar').style.width = (totalMatchedSoFar / TOTAL_QUESTIONS * 100) + '%';
-            
-            if(matchState.matchedCount === 5) {
+
+            if (matchState.matchedCount === matchState.pairs.length) {
                 document.getElementById('dynamicQuestionArea').style.pointerEvents = 'none';
                 setTimeout(() => {
                     showFeedback(true, 'Great Round!', '');
-                    setTimeout(() => { 
-                        hideFeedback(); 
-                        currentQuestionIndex++; 
-                        loadQuestion(); 
+                    setTimeout(() => {
+                        hideFeedback();
+                        currentQuestionIndex++;
+                        loadQuestion();
                     }, 1500);
                 }, 500);
             }
         } else {
             playWrongSound();
-            matchState.selectedEn.el.classList.add('border-red-500', 'shake');
-            matchState.selectedAr.el.classList.add('border-red-500', 'shake');
+            matchState.selectedLeft.el.classList.add('border-red-500', 'shake');
+            matchState.selectedRight.el.classList.add('border-red-500', 'shake');
             setTimeout(() => {
-                if(matchState.selectedEn) { matchState.selectedEn.el.classList.remove('selected', 'border-red-500', 'shake'); }
-                if(matchState.selectedAr) { matchState.selectedAr.el.classList.remove('selected', 'border-red-500', 'shake'); }
-                matchState.selectedEn = null; matchState.selectedAr = null;
+                if (matchState.selectedLeft) matchState.selectedLeft.el.classList.remove('selected', 'border-red-500', 'shake');
+                if (matchState.selectedRight) matchState.selectedRight.el.classList.remove('selected', 'border-red-500', 'shake');
+                matchState.selectedLeft = null; matchState.selectedRight = null;
             }, 800);
         }
     }
 }
 
 // ============================================================
-// FINAL ANSWER HANDLER (MCQ & TF)
+// FINAL ANSWER HANDLERS (MCQ & TF)
 // ============================================================
-function handleFinalAnswer(isCorrect, element, selectedOptText, engWord, correctionText) {
+function handleFinalAnswer(isCorrect, element, correctionText) {
+    if (element) {
+        if (isCorrect) { element.classList.add('!bg-green-500','!text-white','!border-green-600','scale-105'); }
+        else { element.classList.add('!bg-red-500','!text-white','!border-red-600','shake'); }
+    }
+    handleFinalAnswerGeneric(isCorrect, correctionText);
+}
+
+function handleFinalAnswerGeneric(isCorrect, correctionText) {
     const container = document.getElementById('dynamicQuestionArea');
-    container.style.pointerEvents='none'; // Prevent double clicking
-    
+    container.style.pointerEvents = 'none';
+
     let delayTime = 1500;
-    
-    if(isCorrect) {
+
+    if (isCorrect) {
         currentGameScore += (100 / TOTAL_QUESTIONS);
         document.getElementById('scoreDisplay').innerText = Math.round(currentGameScore);
         playCorrectSound();
-        if(element) { element.style.animation = 'none'; element.classList.add('!bg-green-500','!text-white','!border-green-600','scale-105'); }
         showFeedback(true, 'Excellent!', '');
     } else {
         playWrongSound();
-        if(element) { element.style.animation = 'none'; element.classList.add('!bg-red-500','!text-white','!border-red-600','shake'); }
-        
-        let msg = `Oops!`;
-        showFeedback(false, msg, correctionText || `The correct meaning for ${engWord} is missing.`);
+        showFeedback(false, 'Oops!', correctionText);
         delayTime = 2500;
     }
-    
-    setTimeout(() => { 
-        hideFeedback(); 
-        currentQuestionIndex++; 
-        loadQuestion(); 
+
+    setTimeout(() => {
+        hideFeedback();
+        currentQuestionIndex++;
+        loadQuestion();
     }, delayTime);
 }
 
 // ============================================================
-// FEEDBACK OVERLAY
+// FEEDBACK OVERLAY (uses the teacher-provided correct/wrong images)
 // ============================================================
-function showFeedback(isCorrect, text, correctionHtml) {
+function showFeedback(isCorrect, text, correctionText) {
     const overlay = document.getElementById('feedbackOverlay');
     const card = document.getElementById('feedbackCard');
     const iconContainer = document.getElementById('feedbackIconContainer');
     const textEl = document.getElementById('feedbackText');
     const correctionEl = document.getElementById('feedbackCorrection');
-    
+
     overlay.classList.remove('hidden'); overlay.classList.add('flex');
     card.classList.remove('scale-0'); card.classList.add('pop-out');
-    
-    if(isCorrect) {
-        iconContainer.innerHTML = `⭐`;
-        iconContainer.className = 'mb-4 flex justify-center w-full items-center relative text-8xl md:text-9xl drop-shadow-xl emoji-img animate-bounce';
+
+    if (isCorrect) {
+        iconContainer.innerHTML = `<img src="1.jpeg" alt="Correct" class="feedback-img">`;
         textEl.innerHTML = text;
         textEl.className = 'text-4xl md:text-5xl font-black text-green-600 mt-4 english-text uppercase tracking-widest';
         correctionEl.classList.add('hidden');
     } else {
-        iconContainer.innerHTML = `❌`;
-        iconContainer.className = 'mb-4 flex justify-center w-full items-center relative text-8xl md:text-9xl drop-shadow-xl emoji-img shake';
+        iconContainer.innerHTML = `<img src="2.jpg" alt="Wrong" class="feedback-img">`;
         textEl.innerHTML = text;
         textEl.className = 'text-3xl md:text-4xl font-bold text-red-600 mt-4 leading-relaxed english-text';
-        
-        if (correctionHtml) {
-            correctionEl.innerHTML = correctionHtml;
+
+        if (correctionText) {
+            correctionEl.innerHTML = correctionText;
             correctionEl.classList.remove('hidden');
         } else {
             correctionEl.classList.add('hidden');
         }
     }
 }
- 
+
 function hideFeedback() {
     const overlay = document.getElementById('feedbackOverlay');
     const card = document.getElementById('feedbackCard');
@@ -714,30 +935,27 @@ function endGame() {
     document.getElementById('resultArea').classList.remove('hidden');
     document.getElementById('finalScore').innerText = Math.round(currentGameScore);
     document.getElementById('studentNameInput').value = '';
-    
-    // Ensure progress bar is full
     document.getElementById('progressBar').style.width = '100%';
     playFinishSound();
 }
- 
+
 function sendToWhatsApp() {
     const studentName = document.getElementById('studentNameInput').value.trim();
-    if(!studentName) { 
-        alert("برجاء إدخال اسمك أولاً يا بطل! 🦸‍♂️"); 
-        // Note: Used basic alert here as fallback, but ideally should use a custom modal as per instructions. 
-        // Given constraints, a simple focus is better to avoid alert.
+    if (!studentName) {
+        alert("برجاء إدخال اسمك أولاً يا بطل! 🦸‍♂️");
         document.getElementById('studentNameInput').focus();
         document.getElementById('studentNameInput').classList.add('border-red-500', 'shake');
         setTimeout(()=> document.getElementById('studentNameInput').classList.remove('border-red-500', 'shake'), 500);
-        return; 
+        return;
     }
     const score = Math.round(currentGameScore);
     const unitTitle = vocabDB[currentUnitId].title;
-    
-    const message = `Hello Mr. Mohamed Mostafa! 👨‍🏫\n\nMy name is: *${studentName}* 🦸‍♂️\nGrade: *4th Primary - 1st Term* 📚\nUnit: *${unitTitle}*\nLesson: *${currentLessonNum}*\nGame: *${currentGameType.toUpperCase()}* 🎯\nMy Score: *${score} / 100* 🏆\n\nGreat job! ✨`;
+    const lessonTitle = getCurrentLesson().title;
+
+    const message = `Hello Mr. Mohamed Mostafa! 👨‍🏫\n\nMy name is: *${studentName}* 🦸‍♂️\nGrade: *4th Primary - 1st Term* 📚\nUnit: *${unitTitle}*\nLesson: *${lessonTitle}*\nGame: *${currentGameTitle}* 🎯\nMy Score: *${score} / 100* 🏆\n\nGreat job! ✨`;
     window.open(`https://wa.me/201062625048?text=${encodeURIComponent(message)}`, '_blank');
 }
- 
+
 window.onload = initApp;
 </script>
 </body>
