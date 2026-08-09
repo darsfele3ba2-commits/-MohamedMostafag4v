@@ -594,13 +594,6 @@ function showGamesMenu(lessonIndex) {
 // ============================================================
 function pickMCQType(word, lessonWords, optionCount) {
     let types = ['en2ar', 'ar2en'];
-    if (word.e) {
-        types.push('emoji2en', 'emoji2ar');
-        let othersWithEmoji = lessonWords.filter(w => w.e && w.en !== word.en);
-        if (othersWithEmoji.length >= optionCount - 1) {
-            types.push('en2emoji', 'ar2emoji');
-        }
-    }
     return types[Math.floor(Math.random() * types.length)];
 }
 
@@ -644,7 +637,6 @@ function buildMCQQuestion(word, lessonWords, optionCount) {
 
 function pickTFType(word, lessonWords) {
     let types = ['en_ar', 'ar_en'];
-    if (word.e) types.push('emoji_en', 'emoji_ar');
     return types[Math.floor(Math.random() * types.length)];
 }
 
@@ -694,11 +686,7 @@ function generateGame(gameType, gameTitle) {
         let rounds = [];
         for (let i = 0; i < selectedWords.length; i += 5) {
             let roundPairs = selectedWords.slice(i, i + 5);
-            let allHaveEmoji = roundPairs.every(p => p.e);
             let mode = 'en_ar';
-            if (allHaveEmoji && Math.random() < 0.4) {
-                mode = Math.random() > 0.5 ? 'emoji_en' : 'emoji_ar';
-            }
             rounds.push({ type: 'match_round', pairs: roundPairs, mode: mode });
         }
         gameQuestions = rounds;
