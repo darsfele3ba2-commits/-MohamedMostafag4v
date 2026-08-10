@@ -446,6 +446,28 @@ let matchState = { pairs: [], mode: 'en_ar', selectedLeft: null, selectedRight: 
 // HELPERS
 // ============================================================
 function shuffleArray(arr) { let a=[...arr]; for(let i=a.length-1;i>0;i--){ let j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function shuffleArrayNoFixedPoints(pairs, reference) {
+    // Shuffles pairs so that no item ends up aligned with its own match in the reference array
+    // (prevents the right-column word from sitting directly across from its own pair on the left).
+    let arr = shuffleArray(pairs);
+    if (arr.length < 2) return arr;
+    let attempts = 0;
+    const hasFixedPoint = a => a.some((p, i) => p.en === reference[i].en);
+    while (hasFixedPoint(arr) && attempts < 50) {
+        arr = shuffleArray(pairs);
+        attempts++;
+    }
+    if (hasFixedPoint(arr)) {
+        // Fallback: resolve any remaining fixed points with simple adjacent swaps
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].en === reference[i].en) {
+                let j = (i + 1) % arr.length;
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+    }
+    return arr;
+}
 
 // Converts every emoji character inside the given element into a small
 // embedded image. The images themselves are bundled inside this file
@@ -815,7 +837,7 @@ function renderMatchRound(q, container) {
     matchState = { pairs: q.pairs, mode: mode, selectedLeft: null, selectedRight: null, matchedCount: 0 };
 
     let shuffledLeft = shuffleArray([...q.pairs]);
-    let shuffledRight = shuffleArray([...q.pairs]);
+    let shuffledRight = shuffleArrayNoFixedPoints(q.pairs, shuffledLeft);
 
     function leftHTML(p) {
         if (mode === 'emoji_en' || mode === 'emoji_ar') return `<span class="text-3xl emoji-img">${p.e}</span>`;
